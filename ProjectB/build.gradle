@@ -12,12 +12,9 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'com.blackducksoftware.hub'
 
-createHubOutput {
+deployHubOutput {
     hubProjectName = "b_override_name"
     hubVersionName = "b_override_version"
-}
-
-deployHubOutput {
     hubUrl = project.hubUrl
     hubUsername = project.hubUsername
     hubPassword = project.hubPassword

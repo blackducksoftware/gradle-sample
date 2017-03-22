@@ -1,10 +1,11 @@
 buildscript {
     repositories {
+        mavenLocal()
         mavenCentral()
         maven { url "http://jcenter.bintray.com" }
     }
     dependencies {
-        classpath group: 'com.blackducksoftware.integration', name: 'hub-gradle-plugin', version: '3.4.1'
+        classpath group: 'com.blackducksoftware.integration', name: 'hub-gradle-plugin', version: '4.0.0-SNAPSHOT'
     }
 }
 
@@ -12,12 +13,9 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'com.blackducksoftware.hub'
 
-createHubOutput {
+deployHubOutput {
     hubProjectName = "a_override_name"
     hubVersionName = "a_override_version"
-}
-
-deployHubOutput {
     hubUrl = project.hubUrl
     hubUsername = project.hubUsername
     hubPassword = project.hubPassword
