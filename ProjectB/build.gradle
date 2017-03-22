@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "http://jcenter.bintray.com" }
+    }
+    dependencies {
+        classpath group: 'com.blackducksoftware.integration', name: 'hub-gradle-plugin', version: '3.4.1'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'com.blackducksoftware.hub'
+
+createHubOutput {
+}
+
+deployHubOutput {
+    hubUrl = project.hubUrl
+    hubUsername = project.hubUsername
+    hubPassword = project.hubPassword
+}
+
+tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
+tasks.withType(GroovyCompile) { options.encoding = 'UTF-8' }
+
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile 'org.apache.commons:commons-lang3:3.4'
+	compile 'commons-io:commons-io:2.5'
+	compile 'commons-cli:commons-cli:1.3.1'
+	compile 'com.google.code.gson:gson:2.7'
+	compile 'org.jsoup:jsoup:1.9.2'
+	compile 'javax.mail:mail:1.4.7'
+	compile 'org.freemarker:freemarker:2.3.25-incubating'
+	compile 'org.quartz-scheduler:quartz:2.2.1'
+	compile 'org.quartz-scheduler:quartz-jobs:2.2.1'
+    compile 'com.google.guava:guava:19.0'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+}
