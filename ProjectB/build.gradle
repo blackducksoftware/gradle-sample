@@ -13,6 +13,8 @@ apply plugin: 'eclipse'
 apply plugin: 'com.blackducksoftware.hub'
 
 createHubOutput {
+    hubProjectName = "b_override_name"
+    hubVersionName = "b_override_version"
 }
 
 deployHubOutput {
