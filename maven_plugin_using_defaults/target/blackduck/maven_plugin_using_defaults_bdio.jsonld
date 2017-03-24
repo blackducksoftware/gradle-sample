@@ -1,0 +1,97 @@
+[
+  {
+    "specVersion": "1.1.0",
+    "spdx:name": "maven_plugin_using_defaults/0.0.1-SNAPSHOT Black Duck I/O Export",
+    "@id": "uuid:4f7dd6e9-df13-4ba0-bb16-38d9db194f8f",
+    "@type": "BillOfMaterials",
+    "relationship": []
+  },
+  {
+    "name": "maven_plugin_using_defaults",
+    "revision": "0.0.1-SNAPSHOT",
+    "@id": "data:com.blackducksoftware.integration/maven_plugin_using_defaults/0.0.1-SNAPSHOT",
+    "@type": "Project",
+    "externalIdentifier": {
+      "externalSystemTypeId": "maven",
+      "externalId": "com.blackducksoftware.integration:maven_plugin_using_defaults:0.0.1-SNAPSHOT"
+    },
+    "relationship": [
+      {
+        "related": "data:joda-time/joda-time/2.9.6",
+        "relationshipType": "DYNAMIC_LINK"
+      },
+      {
+        "related": "data:com.google.code.gson/gson/2.7",
+        "relationshipType": "DYNAMIC_LINK"
+      },
+      {
+        "related": "data:com.squareup.okhttp3/okhttp/3.4.2",
+        "relationshipType": "DYNAMIC_LINK"
+      },
+      {
+        "related": "data:com.squareup.okhttp3/okhttp-urlconnection/3.4.2",
+        "relationshipType": "DYNAMIC_LINK"
+      }
+    ]
+  },
+  {
+    "name": "joda-time",
+    "revision": "2.9.6",
+    "@id": "data:joda-time/joda-time/2.9.6",
+    "@type": "Component",
+    "externalIdentifier": {
+      "externalSystemTypeId": "maven",
+      "externalId": "joda-time:joda-time:2.9.6"
+    },
+    "relationship": []
+  },
+  {
+    "name": "gson",
+    "revision": "2.7",
+    "@id": "data:com.google.code.gson/gson/2.7",
+    "@type": "Component",
+    "externalIdentifier": {
+      "externalSystemTypeId": "maven",
+      "externalId": "com.google.code.gson:gson:2.7"
+    },
+    "relationship": []
+  },
+  {
+    "name": "okhttp",
+    "revision": "3.4.2",
+    "@id": "data:com.squareup.okhttp3/okhttp/3.4.2",
+    "@type": "Component",
+    "externalIdentifier": {
+      "externalSystemTypeId": "maven",
+      "externalId": "com.squareup.okhttp3:okhttp:3.4.2"
+    },
+    "relationship": [
+      {
+        "related": "data:com.squareup.okio/okio/1.9.0",
+        "relationshipType": "DYNAMIC_LINK"
+      }
+    ]
+  },
+  {
+    "name": "okio",
+    "revision": "1.9.0",
+    "@id": "data:com.squareup.okio/okio/1.9.0",
+    "@type": "Component",
+    "externalIdentifier": {
+      "externalSystemTypeId": "maven",
+      "externalId": "com.squareup.okio:okio:1.9.0"
+    },
+    "relationship": []
+  },
+  {
+    "name": "okhttp-urlconnection",
+    "revision": "3.4.2",
+    "@id": "data:com.squareup.okhttp3/okhttp-urlconnection/3.4.2",
+    "@type": "Component",
+    "externalIdentifier": {
+      "externalSystemTypeId": "maven",
+      "externalId": "com.squareup.okhttp3:okhttp-urlconnection:3.4.2"
+    },
+    "relationship": []
+  }
+]
