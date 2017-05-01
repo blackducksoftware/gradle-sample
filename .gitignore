@@ -1,3 +1,10 @@
 .DS_Store
 target/
 pom.xml.bak
+.settings/
+.classpath
+.project
+build/
+.gradle/
+bin/
+.DS_Store
